@@ -112,3 +112,8 @@ def full_chain(request):
         "length": len(blockchain.chain),
     }
     return HttpResponse(json.dumps(response))
+
+
+def hash_text(request):
+
+    return render(request, "hash.html")

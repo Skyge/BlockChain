@@ -22,6 +22,7 @@ urlpatterns = [
     path("mine", views.mine),
     path("transactions/new/", views.new_transaction),
     path("chain/", views.full_chain),
-    path(r"^register", views.register_nodes),
-    path(r"^resolve", views.consensus),
+    path("hash/", views.hash_text)
+    # path(r"^register", views.register_nodes),
+    # path(r"^resolve", views.consensus),
 ]
